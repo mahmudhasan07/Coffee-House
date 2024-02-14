@@ -1,19 +1,18 @@
 <template >
-    <section id="divNumber" class="my-10 bg-[#AE7E4E] text-white flex justify-around p-2">
+    <section  class="my-10 bg-[#AE7E4E] text-white flex justify-around p-2">
+        <div id="divNumber">
+        </div>
 
     </section>
 </template>
 <script setup>
-import { EffectScope, watchEffect } from 'vue';
 
-watchEffect(() => {
-    const divNum = document.getElementById("divNumber")
+const divNum = document.getElementById("divNumber")
     const div = document.createElement("div")
     div.innerHTML = `
-<p>5000</p>
+<img src="https://i.ibb.co/x5mgQc0/djjdsdjs.jpg" />
 `
     divNum.appendChild(div)
-}, [])
 
 </script>
 <style ></style>
