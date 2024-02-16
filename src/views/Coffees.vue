@@ -2,7 +2,7 @@
     <section>
         <h1 class="text-3xl font-bold text-center my-10 text-[#AE7E4E]">Our Coffess & Snacks</h1>
 
-        <div id="card" class="flex justify-center gap-10">
+        <div id="card" class="flex flex-wrap justify-center gap-10">
 
 
         </div>

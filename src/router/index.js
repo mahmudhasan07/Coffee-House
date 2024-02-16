@@ -18,6 +18,11 @@ const router = createRouter({
       path: '/coffees',
       name: "Coffees",
       component: () => import("../views/Coffees.vue")
+    },
+    {
+      path: '/updateORdelete',
+      name: "Update OR Delete",
+      component: () => import("../views/UpdateCoffee.vue")
     }
 
   ]
