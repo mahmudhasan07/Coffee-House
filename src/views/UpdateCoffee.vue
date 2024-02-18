@@ -25,41 +25,21 @@ import { ref, watchEffect } from 'vue';
 
 const array = ref([])
 const navigate = navigator
+const axiosLink = useAxios(AxiosSecure)
 
 
 
 
 watchEffect(() => {
-    const axiosLink = useAxios(AxiosSecure)
-
     axiosLink.get('/coffees')
         .then(res => {
             array.value = res.data
             console.log(typeof (array));
-
-            // const cards = document.getElementById('cards')
-            // array.value.map((element) => {
-            //     const card = document.createElement("div")
-            //     card.className = "w-80 card p-2 border-2 border-gray-400 rounded-xl"
-            //     card.innerHTML = `
-            //     <img class="w-full rounded-xl h-80 object-cover" src="${element.Coffee_image}" alt="">
-            // <h1 class="text-2xl font-semibold">${element.Coffee_name}</h1>
-            // <p class="text-lg font-semibold">TK. ${element.Coffee_price}</p>
-            // <p class='my-2'>${element.Coffee_note}</p>
-
-            // <div class="mt-auto flex gap-1">
-            //     <button :onclick="${handleUpdate}" class="btn w-1/2">Update</button>
-            //     <button :onclick="${handleUpdate}" class="btn w-1/2">Delete</button>
-            //     </div>
-
-            //     `
-            //     cards.appendChild(card)
-            // })
-
         })
         .catch(error => {
             console.log(error);
         })
+
 }, [])
 
 const handleUpdate = (id) => {
@@ -68,6 +48,12 @@ const handleUpdate = (id) => {
 }
 
 const handleDelete =(id)=>{
+    console.log(id);
+axiosLink.delete(`/coffees/${id}`)
+.then(res=>{
+    console.log(res.data);
+})
+
     
 }
 
