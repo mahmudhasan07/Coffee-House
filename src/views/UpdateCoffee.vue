@@ -53,6 +53,9 @@ axiosLink.delete(`/coffees/${id}`)
 .then(res=>{
     console.log(res.data);
 })
+.catch(error=>{
+    console.log(error);
+})
 
     
 }
