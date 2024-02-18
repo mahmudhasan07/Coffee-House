@@ -9,8 +9,8 @@
                     <p class="text-lg font-semibold">TK. {{ item.Coffee_price }}</p>
                     <p class='my-2'>{{ item.Coffee_note }}</p>
                     <div class="flex gap-2 mt-auto">
-                        <button :onclick="handleUpdate" class="btn w-1/2 ">Update</button>
-                        <button class="btn w-1/2">Delete</button>
+                        <button :onclick="()=>handleUpdate(item.ID)" class="btn w-1/2 ">Update</button>
+                        <button :onclick="()=>handleDelete(item.ID)" class="btn w-1/2">Delete</button>
                     </div>
                 </div>
             </div>
@@ -20,9 +20,11 @@
 </template>
 <script setup>
 import useAxios, { AxiosSecure } from '@/components/Hooks/useAxios';
+import router from '@/router';
 import { ref, watchEffect } from 'vue';
 
 const array = ref([])
+const navigate = navigator
 
 
 
@@ -60,9 +62,13 @@ watchEffect(() => {
         })
 }, [])
 
-const handleUpdate = () => {
+const handleUpdate = (id) => {
     console.log("hello");
-    document.getElementById("modal").style.display = "block"
+    router.push(`/updateORdelete/${id}`)
+}
+
+const handleDelete =(id)=>{
+    
 }
 
 </script>

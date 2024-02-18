@@ -23,6 +23,12 @@ const router = createRouter({
       path: '/updateORdelete',
       name: "Update OR Delete",
       component: () => import("../views/UpdateCoffee.vue")
+    },
+    {
+      path: '/updateORdelete/:id',
+      name: "Update OR Delete section",
+      component: () => import("../views/UpdateInfo.vue"),
+      props : true
     }
 
   ]
