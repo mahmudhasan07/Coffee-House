@@ -9,8 +9,8 @@
                     <p class="text-lg font-semibold">TK. {{ item.Coffee_price }}</p>
                     <p class='my-2'>{{ item.Coffee_note }}</p>
                     <div class="flex gap-2 mt-auto">
-                        <button :onclick="()=>handleUpdate(item.ID)" class="btn w-1/2 ">Update</button>
-                        <button :onclick="()=>handleDelete(item.ID)" class="btn w-1/2">Delete</button>
+                        <button :onclick="() => handleUpdate(item.ID)" class="btn w-1/2 ">Update</button>
+                        <button :onclick="() => handleDelete(item.ID)" class="btn w-1/2">Delete</button>
                     </div>
                 </div>
             </div>
@@ -46,37 +46,46 @@ const handleUpdate = (id) => {
     router.push(`/updateORdelete/${id}`)
 }
 
-const handleDelete =(id)=>{
+const handleDelete = (id) => {
     console.log(id);
 
     Swal.fire({
-  title: "Are you sure?",
-  text: "You won't be able to revert this!",
-  icon: "warning",
-  showCancelButton: true,
-  confirmButtonColor: "#3085d6",
-  cancelButtonColor: "#d33",
-  confirmButtonText: "Yes, delete it!"
-}).then((result) => {
-  if (result.isConfirmed) {
-    Swal.fire({
-      title: "Deleted!",
-      text: "Your file has been deleted.",
-      icon: "success"
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            axiosLink.delete(`/coffees/${id}`)
+                .then(res => {
+                    console.log(res.data);
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your item has been deleted.",
+                        icon: "success"
+                    });
+                })
+                .catch(error => {
+                    console.log(error);
+                })
+
+        }
     });
-  }
-});
 
 
-axiosLink.delete(`/coffees/${id}`)
-.then(res=>{
-    console.log(res.data);
-})
-.catch(error=>{
-    console.log(error);
-})
 
-    
+    axiosLink.delete(`/coffees/${id}`)
+        .then(res => {
+            console.log(res.data);
+        })
+        .catch(error => {
+            console.log(error);
+        })
+
+
 }
 
 </script>
