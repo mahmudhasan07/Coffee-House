@@ -16,45 +16,45 @@
                 <div class="relative">
                     <img src="https://i.ibb.co/drL19z7/coffeebanner1.png" class="w-full h-full relative bannerimage" alt="">
                     <div
-                        class="text-white textbanner absolute  lg:ml-10 md:ml-7 ml-3 left-1/4  text-center top-1/3 shadow-lg">
-                        <h1 class="text-7xl text-center my-3  font-extrabold">
+                        class="text-white textbanner absolute  lg:ml-10 md:ml-7 ml-3 lg:left-1/4 left-1/3 text-center top-1/3 shadow-lg">
+                        <h1 class="lg:text-7xl text-center my-3  font-extrabold">
                             Best Coffee Town
                         </h1>
                         <button
-                            class="p-3 rounded-xl border-2 text-lg font-semibold backdrop-blur-3xl bg-transparent">Explore</button>
+                            class="p-3 rounded-xl border-2 lg:text-lg font-semibold backdrop-blur-3xl bg-transparent">Explore</button>
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="relative">
                     <img src="https://i.ibb.co/cFXMvsx/coffeebanner2.jpg" class="w-full h-full relative bannerimage" alt="">
-                    <div class="text-white textbanner absolute  left-1/4 -ml-10  text-center top-1/3 shadow-lg">
-                        <h1 class="text-7xl text-center my-3  font-extrabold">
+                    <div class="text-white textbanner absolute  lg:left-1/4 left-1/3 -ml-10  text-center top-1/3 shadow-lg">
+                        <h1 class="lg:text-7xl text-center my-3  font-extrabold">
                             Best Service We provide
                         </h1>
-                        <button class="p-3 rounded-xl border-2 text-lg font-semibold backdrop-blur-3xl">Explore</button>
+                        <button class="p-3 rounded-xl border-2 lg:text-lg font-semibold backdrop-blur-3xl">Explore</button>
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="relative">
                     <img src="https://i.ibb.co/myjrtnh/coffeebanner3.jpg" class="w-full h-full relative bannerimage" alt="">
-                    <div class="text-white textbanner absolute  left-1/4 -ml-10  text-center top-1/3 shadow-lg">
-                        <h1 class="text-7xl text-center my-3   font-extrabold">
+                    <div class="text-white textbanner absolute  lg:left-1/4 left-1/3 -ml-10  text-center top-1/3 shadow-lg">
+                        <h1 class="lg:text-7xl text-center my-3   font-extrabold">
                             Some Time For Myself
                         </h1>
-                        <button class="p-3 rounded-xl border-2 text-lg font-semibold backdrop-blur-3xl">Explore</button>
+                        <button class="p-3 rounded-xl border-2 lg:text-lg font-semibold backdrop-blur-3xl">Explore</button>
                     </div>
                 </div>
             </swiper-slide>
             <swiper-slide>
                 <div class="relative">
                     <img src="https://i.ibb.co/8XPwGwz/coffeebanner4.jpg" class="w-full h-full relative bannerimage" alt="">
-                    <div class="text-white textbanner absolute left-1/4   text-center top-1/3 shadow-lg">
-                        <h1 class="text-7xl text-center my-3   font-extrabold">
+                    <div class="text-white textbanner absolute lg:left-1/4 left-1/3  text-center top-1/3 shadow-lg">
+                        <h1 class="lg:text-7xl text-center my-3   font-extrabold">
                             Friendly Atmosphere <br> To Enjoy Yourself
                         </h1>
-                        <button class="p-3 rounded-xl border-2 text-lg font-semibold backdrop-blur-3xl">Explore</button>
+                        <button class="p-3 rounded-xl border-2 lg:text-lg font-semibold backdrop-blur-3xl">Explore</button>
                     </div>
                 </div>
             </swiper-slide>

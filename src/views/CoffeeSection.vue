@@ -1,8 +1,8 @@
 <template >
     <section class="my-10">
         <h1 class="text-[#AE7E4E] text-3xl font-bold text-center my-10">COFFEE BUILD YOUR BASE.</h1>
-        <div class="flex flex-wrap justify-around">
-            <div class="w-1/4  my-auto space-y-5">
+        <div class="flex flex-wrap lg:gap-0 gap-5 justify-around">
+            <div class="lg:w-1/4  my-auto space-y-5">
                 <div class="flex gap-5">
                     <div class="text-end">
                         <h1 class="text-2xl font-semibold">Croissant</h1>
@@ -36,11 +36,11 @@
 
             </div>
             <!-- *2nd part -->
-            <div class="w-1/4">
+            <div class="lg:w-1/4 w-2/3">
                 <img :src="coffee1" alt="">
             </div>
             <!-- *3rd part -->
-            <div class="w-1/4 my-auto space-y-5">
+            <div class="lg:w-1/4 my-auto space-y-5">
                 <div class="flex flex-row-reverse gap-10">
                     <div class="">
                         <h1 class="text-2xl font-semibold">Turkish Coffee</h1>

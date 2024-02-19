@@ -3,11 +3,11 @@
 
 </script>
 <template >
-    <nav class="flex justify-center gap-28 text-white  border-b-2 border-gray-500 py-3 bg-[#AE7E4E]">
+    <nav class="flex flex-wrap justify-center lg:gap-28 gap-5 text-white  border-b-2 border-gray-500 py-3 bg-[#AE7E4E]">
         <div>
             <h1 class="text-4xl font-bold">Coffee House</h1>
         </div>
-        <div class="flex flex-wrap text-xl font-semibold my-auto gap-10">
+        <div class="flex flex-wrap text-xl font-semibold my-auto justify-center lg:gap-10 gap-2">
             <div class=" p-1 flex flex-col gap-1">
                 <router-link class="navtitle" to="/">Home</router-link>
                 <p class="nai"></p>

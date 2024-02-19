@@ -25,6 +25,7 @@ import { ref, watchEffect } from 'vue';
 
 const array = ref([])
 const axiosLink = useAxios(AxiosSecure)
+import Swal from 'sweetalert2'
 
 
 
