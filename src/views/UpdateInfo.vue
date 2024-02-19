@@ -29,9 +29,9 @@ watchEffect(()=>{
     .catch(error=>{
         console.log(error);
     })
-},[])
+},[]) coffe
 
-console.log(item);
+console.log(item.Coffee_name);
 
 </script>
 <style >

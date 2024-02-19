@@ -24,7 +24,6 @@ import router from '@/router';
 import { ref, watchEffect } from 'vue';
 
 const array = ref([])
-const navigate = navigator
 const axiosLink = useAxios(AxiosSecure)
 
 
